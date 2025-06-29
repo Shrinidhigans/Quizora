@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="quizora.png" alt="Quizora Logo">
+        </div>
+        <h1>Quizora</h1>
+    </header>
+
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Login</button>
+            
+            <p>Don't have an account? <a href="#" toggleFOrm="register">Sign up here</a></p>
+        </form>
+    </div>
+    <div class="container" id="register-container" style="display: none;">
+        <h2>Register</h2>
+        <div class="form-group">
+            <label for="register-name">Name</label>
+            <input type="text" id="register-name" required>
+        </div>
+        <div class="form-group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" required>
+        </div>
+        <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" required>
+        </div>
+        <div class="form-group">
+            <button onclick="register()">Register</button>
+        </div>
+        <div class="toggle-link">
+            <a href="LoginPage.html">Already have an account? Login</a> <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+    
+
+    <footer>
+        © 2024 Quizora Website | All Rights Reserved
+    </footer>
+    <script>
+        function toggleForm(form) {
+            if (form === 'login') {
+                document.getElementById('login-container').style.display = 'block';
+                document.getElementById('register-container').style.display = 'none';
+            } else {
+                document.getElementById('login-container').style.display = 'none';
+                document.getElementById('register-container').style.display = 'block';
+            }
+        }
+
+        function login() {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            // Add your login logic here
+            alert('Login successful');
+        }
+
+        function register() {
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            // Add your registration logic here
+            alert('Registration successful');
+        }
+    </script>
+
+</body>
+</html>

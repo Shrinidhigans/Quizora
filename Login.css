@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+html, body {
+    height: 100%;
+    background-color:rgb(248, 244, 225) ; /* Background image with gradient overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color:transparent; 
+}
+header {
+    background-color:transparent;
+    font-style: sans-serif ;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: rgb(116, 81, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-form label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #8D493A;
+    background-color: #e6f7ff; /* Slight color change on focus */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8D493A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adds transition effect */
+    text-transform: uppercase;
+}
+
+.login-form button:hover {
+    background-color: #8D493A;
+    transform: translateY(-3px); /* Lifts button on hover */
+}
+
+.login-form p {
+    margin-top: 15px;
+    color: #666;
+}
+
+.login-form a {
+    color: #8D493A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.login-form a:hover {
+    color: #8D493A;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgb(116, 81, 45);
+    font-size: 14px;
+}

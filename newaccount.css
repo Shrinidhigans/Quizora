@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: rgb(84, 51, 16); /* Dark text */
+}
+
+header {
+    background-color: rgb(175, 143, 111); /* Header color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 50px; /* Logo size */
+    vertical-align: middle;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    max-width: 400px; /* Max width for forms */
+    margin: 50px auto; /* Center the container */
+    padding: 30px; /* Increased padding for better spacing */
+    background: white; /* White background for forms */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+h2 {
+    text-align: center;
+    color: rgb(175, 143, 111); /* Heading color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased space between inputs */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin for better spacing */
+    color: rgb(84, 51, 16); /* Darker text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Increased padding for comfort */
+    background-color: rgb(84, 51, 16); /* Button color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: rgb(175, 143, 111); /* Darker color on hover */
+}
+
+p {
+    text-align: center;
+    color: rgb(175, 143, 111); /* Lighter text for paragraph */
+    margin-top: 20px; /* Space above paragraph */
+}
+
+.toggle-link {
+    text-align: center;
+    margin-top: 15px; /* Space above toggle link */
+}
+
+.toggle-link a {
+    color: rgb(175, 143, 111); /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.toggle-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px; /* Increased padding for footer */
+    background-color: rgb(175, 143, 111); /* Footer color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px; /* Space above footer */
+}
